@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+    <link rel="stylesheet" href="estilo01.css">
+    <script src="script01.js">
+
+    </script>
+</head>
+<body>
+    <div class="popup" onclick="okayPopup()">
+        <span class="popupText" id="PopUp"><h1 style="font-size: 15px;">Jogo De adivinhação</h1>
+            <p>Tente adivinhar o numero que estou pensando!</p>
+            <br><br>
+            <h1 style="font-size: 10px;color: #fff;">Clique aqui!</h1>
+        </span>
+    </div>
+    <main>
+        <br><br><br>
+        <label class="label-chute">
+            <h1 style="font-size: 20px;font-weight: 100;margin-left: 55px;">Chute um numero: 
+            <input type="number" id="chute" name="chute" placeholder="Insira seu palpite">
+            </h1>
+        </label>
+        <button onclick="verificaNumero()">Chutar</button>
+        <br><br>
+        <p id="tentativas"></p>
+        <p id="parabens"></p>
+    </main>
+    
+</body>
+</html>
